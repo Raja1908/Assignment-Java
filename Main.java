@@ -27,9 +27,7 @@ public class Main {
 		while (n-- > 0) {
 			String s = sc.nextLine();
 			if (s.equals("SERVED")) {
-				if (pq.isEmpty())
-					System.out.println("Queue is empty");
-				else
+				if (!pq.isEmpty())
 					pq.poll();
 			} else {
 				String sx[] = s.split(" ");
